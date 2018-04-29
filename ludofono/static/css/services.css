@@ -1,0 +1,29 @@
+
+content{
+    text-align: center;
+}
+h1{
+    font-size: 25px;
+    color: green;
+    text-align: center;
+
+    margin: 50px;
+
+}
+p{
+    color: #444;
+}
+img{
+    width: 100%;
+}
+.tab{
+    display: flex;
+}
+.tab p{
+    width: 50%;
+
+}
+.tab div{
+    width: 50%;
+
+}

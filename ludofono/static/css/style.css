@@ -1,0 +1,165 @@
+body{
+	margin:0px;
+ 
+}
+body *{
+
+	color: #444;
+}
+header{
+    width: 100%;
+}
+header h2{
+    padding-left: 43px;
+    font-size: 45px;
+}
+header p{
+    padding-left: 43px;
+    font-size: 30px;
+}
+.lenguage{
+	background-color:#0B486B;
+	color: #fff;
+	margin-left: 85%;
+	font-size: 18px;
+	margin-bottom: -54px;
+	position: fixed;
+	width: 73px;
+	border-radius: 4px;
+}
+.en{
+	border-right: #fff 1px solid;
+}
+h2{
+	font-size: 45px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	
+    font-family: 'Comfortaa', cursive;
+}
+
+#banner{ 
+    padding-top: 0px;
+    width: 100%;
+}
+#banner img{ 
+
+    width: 100%;
+}
+
+@media (max-width: 710px) {
+   header h2{
+    	font-size: 30px;
+	}
+
+	header p{
+    	font-size: 20px;
+	}
+	#principal h2{
+
+		margin-top: -30px;
+
+		font-size: 35px;
+	}
+	.social div{
+		visibility: hidden;
+		height: 0px;
+	}
+	.social {
+		visibility: hidden;
+	}	
+
+	.instagram{
+		visibility: hidden;
+	}
+
+}
+@media (max-width: 640px) {
+	    
+	#principal h2{
+		margin-top: -50px;
+		}
+}
+content ul li{
+	display:  flex;
+
+}
+content ul {
+	margin: 0px;
+}
+content ul li p:first-child {
+	margin-right:10px;
+	margin-left:5px;
+}
+.slide_1{
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	color: #333;
+	padding: 20px;
+	margin-top: -100px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: justify;
+}
+.slide_1 h1{
+	color: #00787e;
+
+}
+.slide_2{
+	margin: 30px;
+	text-align: center;
+	color: #f00;
+}
+.slide_2 h1{
+	margin-bottom: 40px;
+	color: #00787e;
+}
+
+.title p{
+	font-size: 18px;
+	text-align: center;
+}
+.title h2{
+	font-size: 25px;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.caja{
+	margin-top: 35px;
+	text-align: center;
+	background-color: #ddd;
+}
+.caja i{
+	background-color: #666;
+	color: #fff;
+	width: 56px;
+	padding: 6px 16px 6px 16px;
+	font-size: 29px;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: -30px;
+	margin-left: -26px;
+}
+.caja :nth-child(2){
+	margin-top: 40px;
+	font-size: 17px;
+	color: #111
+}
+.img_anima{
+	width: 100%;
+}
+.slide_2{
+	margin: auto;
+	margin-top: 50px;
+
+}
+.slide_2 button{
+	background-color: #45ADA8;
+	padding: 10px;
+	color: #FFF;
+}
+.slide_2 h2{
+	margin: 10px;
+}

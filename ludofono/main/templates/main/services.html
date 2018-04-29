@@ -1,0 +1,63 @@
+ 
+{% extends "main/base.html" %} 
+{% block titulo %}Pedido{% endblock %}
+{% block estilo %}
+  
+        {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/services.css' %}">
+{% endblock %}
+{% block contenido %}
+        {% load staticfiles %}
+
+
+
+
+
+
+
+            <content class="row">
+              	
+				<div class="column small-12">
+				  <h1>Cementerio</h1>
+				  <p>
+				  	Contamos con un ambiente 100% natural al sur de la Ciudad, donde tanto como tu mascota y tu podrán disfrutar de un espacio  rodeado de naturaleza y una grandiosa vista panorámica de la  ciudad.
+				  </p>
+				  <img src="{% static 'img/bueno1.jpg' %}">
+				</div>
+
+				  <h1 class="column small-12">Cremación</h1>
+				<div class="tab column small-12">
+				  <p >
+				  	Brindamos igualmente el servicio de cremación en el que Se recupera la totalidad de la cenizas de tu fiel compañero.
+				  </p>
+				  <div class="column small-12 large-6">
+				  	<img src="{% static 'img/buena.jpg' %}" >
+
+				  </div>
+				</div>
+
+
+
+
+            </content>
+
+
+{% endblock %}
+
+{% block js %} 
+    	
+   	<style type="text/css">
+				@media (min-width: 640px) {
+					   
+					.menu li:nth-child(2){
+						    border-top: green solid 3px;
+						    color: green;
+					}
+					.menu li:nth-child(2) *{
+						    color: green;
+					}
+				}
+			</style>
+    </script>
+
+  {% endblock %}

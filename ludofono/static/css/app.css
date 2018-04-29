@@ -1,0 +1,21 @@
+
+.off-canvas.position-left{
+  height: 100%;
+}
+
+nav > .menu > li >a{
+  color: #333;
+}
+.title-bar{
+  font-size: 18px;
+  background-color: rgba(0,0,0,0);
+  height: 70px;
+}
+body{
+  margin: 0px;
+  padding-bottom: 100px;
+}
+header{
+  padding-top: 70px;
+  margin-bottom: 100px;
+}

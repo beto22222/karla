@@ -1,0 +1,52 @@
+ 
+{% extends "main/base.html" %} 
+{% block titulo %}Carrito{% endblock %}
+{% block estilo %}
+  
+        {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/proyecto.css' %}">
+{% endblock %}
+{% block contenido %}
+        {% load staticfiles %}
+
+            <content class="row">
+              <h1 class="column small-12">Proyecto ecológico</h1>
+              <div class="column small-12 ">
+                <p>
+                  Cuando tu mejor amigo fallece, el vacío que deja es casi imposible de llenar después de tantos años de convivir con el, es por esto  que puedes dedicarle a tu animal de compañía un lugar muy especial.
+                </p>
+                <p>
+                  Nosotros Cementerio de Mascotas Ameyalco tenemos el proyecto de crear bio-pets, urna ecológica en la  que la esencia de tu fiel compañero pueda dar lugar a otra vida. 
+                </p>
+                <p>
+                  Contamos con el ambiente y los espacios perfectos, para una segunda oportunidad de crecer. 
+                </p>
+
+              </div>
+
+              <div class="map column small-12">
+                  <img src="{% static 'img/poject.jpg' %}" >
+              </div>
+
+              
+            </content>
+
+            <style type="text/css">
+              @media (min-width: 640px) {
+                   
+                .menu li:nth-child(4){
+                      border-top: green solid 3px;
+                      color: green;
+                }
+                .menu li:nth-child(4) *{
+                      color: green;
+                }
+              }
+            </style>
+
+
+{% endblock %}
+
+{% block js %} 
+    <script src="{% static 'js/proyecto.js' %}"></script>
+  {% endblock %}

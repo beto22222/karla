@@ -1,0 +1,117 @@
+
+{% extends "main/base.html" %} 
+{% block titulo %}Contactanos{% endblock %}
+{% block estilo %}
+  
+        {% load staticfiles %}
+  		<link rel="stylesheet" type="text/css" href="{% static 'css/contact_us.css' %}">
+{% endblock %}
+{% block contenido %}
+        {% load staticfiles %}
+
+        <content class="row">
+              	
+				<h1 class="column small-12">¡Ven a visitarnos!</h1>
+				<div class="column small-12 ">
+				  <p>
+				  	Nos encontramos ubicados en Av. Arenal Pueblo San Andres Totoltepec, Tlalpan, CDMX.
+				  </p>
+				  <p>
+					A solo 30 minutos de la estación “El caminero” del Metrobus Línea 1.
+				  </p>
+
+				</div>
+
+	        	<div class="email_sender colum small-12 medium-5">
+		        	<form>
+		        		<label>
+		        			Nombre:
+		        			<input type="text" name="name" id="name">
+		        		</label>
+		        		<label>
+		        			Email:
+		        			<input type="text" name="email" id="email">
+		        		</label>
+		        		<label>
+		        			<textarea rows="4" cols="50" name="comment" id="content">
+								
+							</textarea>
+		        		</label>
+		        		<label>
+		        			<button  class="send_email">Enviar</button>
+		        		</label>
+		        	</form>
+		        	
+	        	</div>
+				<div class="map column small-12 medium-6">
+
+					<div id="googleMap" style="width:100%;height:400px;"></div>
+
+					
+				</div>
+				<div class="map column small-12">
+				  	<img src="{% static 'img/contacto.jpg' %}" >
+
+				</div>
+
+
+
+
+            </content>
+            <style type="text/css">
+				@media (min-width: 640px) {
+					   
+					.menu li:nth-child(3){
+						    border-top: green solid 3px;
+						    color: green;
+					}
+					.menu li:nth-child(3) *{
+						    color: green;
+					}
+				}
+			</style>
+
+
+{% endblock %}
+
+{% block js %} 
+	<script>
+					function myMap() {
+					var mapProp= {
+					    center:new google.maps.LatLng(51.508742,-0.120850),
+					    zoom:5,
+					};
+					var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+					}
+					</script>
+
+					<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBmryuM5KmkE1GE_suOev5oaymE-VuO-f4&callback=myMap"></script>
+<script type="text/javascript">
+
+	$(".send_email").click(function(e) {
+  
+    let base="/send_email/";
+      console.log('bien');
+    
+
+      e.preventDefault();
+      $.ajax({
+          type: "GET",
+          url: base,
+          data: { 
+            'name':document.getElementById('name').value,
+            'email':document.getElementById('email').value,
+            'content':document.getElementById('content').value
+          },
+          success: function(json) {
+              console.log('todo bien');
+          },
+          error: function(result) {
+              console.log('error');
+          }
+      });
+    
+});
+
+</script>
+{% endblock %}
