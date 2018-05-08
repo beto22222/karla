@@ -59,7 +59,7 @@ footer{
 
 }
 footer i{
-
+ 
 	color: #fff;
 	font-size: 35px;
 }
@@ -67,6 +67,7 @@ footer i span{
 	margin-left: 5px;
 	font-size: 17px;
 	vertical-align: middle;
+	color: #fff;
 }
 
 @media (max-width: 640px) {
